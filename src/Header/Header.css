@@ -1,0 +1,15 @@
+.Header {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background: #917c5eff;
+  width: 100%;
+  height: 100%;
+}
+
+.Header__title {
+  margin: 0;
+  background: #917c5eff;
+  font-size: 200%;
+  font-weight: 400;
+}

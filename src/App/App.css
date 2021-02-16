@@ -1,0 +1,7 @@
+.App {
+  display: grid;
+  grid-template-rows: 70px auto;
+  place-items: center;
+  gap: 20px;
+  background: #e8924299;
+}
