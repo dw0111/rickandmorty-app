@@ -1,7 +1,12 @@
 .App {
   display: grid;
   grid-template-rows: 70px auto;
-  place-items: center;
-  gap: 20px;
   background: #e8924299;
+}
+
+.App__content {
+  display: grid;
+  place-items: center;
+  overflow-y: scroll;
+  height: 100vh;
 }

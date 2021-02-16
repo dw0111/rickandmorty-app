@@ -2,6 +2,7 @@
   display: grid;
   place-items: center;
   padding: 10px;
+  margin: 10px 0;
   background: #a6eee699;
   border-radius: 10px;
 }

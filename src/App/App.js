@@ -7,9 +7,11 @@ function App() {
   return (
     <div className="App">
       <Header title="Rick and Morty API" />
-      {data.results.map(({ name, image, species, id }) => (
-        <Card name={name} img={image} species={species} key={id} />
-      ))}
+      <div className="App__content">
+        {data.results.map(({ name, image, species, id }) => (
+          <Card name={name} img={image} species={species} key={id} />
+        ))}
+      </div>
     </div>
   )
 }
