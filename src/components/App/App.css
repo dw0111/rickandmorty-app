@@ -2,13 +2,13 @@
   display: grid;
   grid-template-rows: 70px auto;
   background: #e8924299;
+  height: 100vh;
 }
 
 .App__content {
   display: grid;
   place-items: center;
   overflow-y: scroll;
-  height: 100vh;
   padding: 20px;
   gap: 20px;
 }
