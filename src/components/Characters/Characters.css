@@ -1,0 +1,7 @@
+.Characters {
+  display: grid;
+  place-items: center;
+  overflow-y: scroll;
+  padding: 20px;
+  gap: 20px;
+}
