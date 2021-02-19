@@ -35,10 +35,3 @@ function App() {
 }
 
 export default App
-
-// function markSearchResult(toSearch, toReplace) {
-//   toReplace.replace(
-//     new RegExp(toSearch, 'gi'),
-//     match => `<mark>${match}</mark>`
-//   )
-// }
