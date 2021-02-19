@@ -4,9 +4,11 @@ import Header from '../Header/Header'
 import getAllCharacters from '../../services/getAllCharacters'
 import './App.css'
 import Characters from '../Characters/Characters'
+import CharacterSearch from '../CharacterSearch/CharacterSearch'
 
 function App() {
   const [characters, setCharacters] = useState([])
+  const [searchInput, setSearchInput] = useState('')
 
   useEffect(() => {
     getAllCharacters({
@@ -18,7 +20,16 @@ function App() {
   return (
     <div className="App">
       <Header title="Rick and Morty API" />
-      <Characters characters={characters} />
+      <CharacterSearch
+        searchValue={searchInput}
+        handleOnChange={setSearchInput}
+      />
+      <Characters
+        characters={characters.filter(({ name }) =>
+          name.toLowerCase().includes(searchInput.toLowerCase())
+        )}
+        searchInput={searchInput}
+      />
     </div>
   )
 }
