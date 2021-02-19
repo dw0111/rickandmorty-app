@@ -28,9 +28,17 @@ function App() {
         characters={characters.filter(({ name }) =>
           name.toLowerCase().includes(searchInput.toLowerCase())
         )}
+        searchInput={searchInput}
       />
     </div>
   )
 }
 
 export default App
+
+// function markSearchResult(toSearch, toReplace) {
+//   toReplace.replace(
+//     new RegExp(toSearch, 'gi'),
+//     match => `<mark>${match}</mark>`
+//   )
+// }
