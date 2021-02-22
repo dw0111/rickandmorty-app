@@ -1,0 +1,17 @@
+.EpisodesGraph {
+  display: grid;
+  overflow-y: scroll;
+  padding: 20px;
+  gap: 20px;
+}
+
+.episodeCount {
+  display: grid;
+  background: #b7e4f999;
+  align-items: center;
+  font-size: 0.8em;
+  border-top-right-radius: 2.5vh;
+  border-bottom-right-radius: 2.5vh;
+  padding: 5px 0 5px 20px;
+  white-space: nowrap;
+}

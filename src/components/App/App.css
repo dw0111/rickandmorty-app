@@ -4,3 +4,7 @@
   background: #e8924299;
   height: 100vh;
 }
+
+.hidden {
+  display: none !important;
+}

@@ -4,7 +4,7 @@ export default async function getAllCharacters({ url, setCharacters }) {
     .then(data => {
       setCharacters(characters => [...characters, ...data.results])
 
-      const nextUrl = data.info.next
-      nextUrl && getAllCharacters({ url: nextUrl, setCharacters })
+      // const nextUrl = data.info.next
+      // nextUrl && getAllCharacters({ url: nextUrl, setCharacters })
     })
 }

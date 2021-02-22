@@ -3,7 +3,7 @@ import './Characters.css'
 
 export default function Characters({ characters, searchInput }) {
   return (
-    <div className="Characters">
+    <div className="Characters hidden">
       {characters.map(({ name, image, species, id }) => (
         <Card
           name={name}

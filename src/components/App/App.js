@@ -5,6 +5,7 @@ import getAllCharacters from '../../services/getAllCharacters'
 import './App.css'
 import Characters from '../Characters/Characters'
 import CharacterSearch from '../CharacterSearch/CharacterSearch'
+import EpisodesGraph from '../EpisodesGraph/EpisodesGraph'
 
 function App() {
   const [characters, setCharacters] = useState([])
@@ -30,6 +31,7 @@ function App() {
         )}
         searchInput={searchInput}
       />
+      <EpisodesGraph characters={characters} />
     </div>
   )
 }
